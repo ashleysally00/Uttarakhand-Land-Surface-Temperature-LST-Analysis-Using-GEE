@@ -81,7 +81,7 @@ To reproduce the results, the following tools and libraries are required:
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
    - Create a new project or select an existing one:
 
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/google-cloud-console-project.png" width="650" alt="Google Cloud Console Project Interface"/>
+   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/google-cloud-console-project.png" width="720" alt="Google Cloud Console Project Interface"/>
 
 <br>
 
