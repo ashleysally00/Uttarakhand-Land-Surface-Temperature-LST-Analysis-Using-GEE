@@ -83,8 +83,10 @@ To reproduce the results, the following tools and libraries are required:
 2. **Enable Earth Engine API**:
    - In the **APIs & Services > Library** section, search for **Earth Engine API**
    - You should see the following screen:
+     <br>
+     <br>
 <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/GEEAPI.png" width="300" alt="Google Earth Engine API Screen"/>
-   
+   <br>
    - Click "MANAGE" or "ENABLE" (if not already enabled)
    - When successfully enabled, you'll see a green checkmark with "API Enabled" as shown in the image above
 
