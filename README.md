@@ -40,12 +40,41 @@ To reproduce the results, the following tools and libraries are required:
    - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
    - Apply for access (if not already approved)
 
+### Google Earth Engine
+1. **Register for Google Earth Engine**:
+   - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
+   - Apply for access (if not already approved)
+
+### Google Earth Engine
+1. **Register for Google Earth Engine**:
+   - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
+   - Apply for access (if not already approved)
+
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
-   - Upload a zipped shapefile of your region of interest (ROI) as a **Table Asset** in the **Assets** tab
-   - Note the **Asset ID** (e.g., `users/your_username/Region_Boundary`)
-   - <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="600" alt="Uttarakhand Boundary Shapefile in GEE"/>
+   - In the **Assets** tab, click the "NEW" button and select "Shape files"
 
+
+   - You'll see this upload interface:
+
+
+   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/uploadfile-shapefile-gee.png" width="300" alt="Shapefile upload interface in GEE"/>
+
+<br>
+<br>
+<br>
+   - After successfully uploading, you'll see your shapefile in the Assets tab:
+<br>
+<br>
+<br>
+<br>
+   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="700" alt="Uttarakhand Boundary Shapefile in GEE"/>
+
+
+   - Note the **Asset ID** for use in your code
+   
+   
+   - Note the **Asset ID** for use in your code CopyRetryClaude does not have the ability to run the code it generates yet.
 ### Google Cloud Console
 1. **Create a Project**:
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
