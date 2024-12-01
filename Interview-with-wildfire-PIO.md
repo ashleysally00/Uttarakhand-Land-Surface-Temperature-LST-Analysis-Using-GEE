@@ -1,5 +1,5 @@
 
-# Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
+# Interview with Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
 
 I interviewed a wildfire Public Information Officer and volunteer firefighter in Redding, California, to get background information on the most useful types of data to collect when developing a machine learning-based wildfire prediction tool, with a focus on wildfire spread.
 
