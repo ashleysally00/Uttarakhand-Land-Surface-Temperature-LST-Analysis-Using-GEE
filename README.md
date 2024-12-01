@@ -40,15 +40,11 @@ To reproduce the results, the following tools and libraries are required:
    - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
    - Apply for access (if not already approved)
 
-### Google Earth Engine
-1. **Register for Google Earth Engine**:
-   - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
-   - Apply for access (if not already approved)
+   - Once approved, you'll see the Code Editor interface:
 
-### Google Earth Engine
-1. **Register for Google Earth Engine**:
-   - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
-   - Apply for access (if not already approved)
+
+   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/GEE-code-editor.png" width="740" alt="Google Earth Engine Code Editor Interface"/>
+
 
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
