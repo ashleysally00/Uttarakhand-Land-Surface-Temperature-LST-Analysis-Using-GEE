@@ -1,7 +1,6 @@
 
 # Comprehensive Guide to LST in Wild Fire Spread Prediction Analysis
 
-
 ## Glossary 
 - **LST (Land Surface Temperature)**: The measure of how hot the Earth's surface would feel to the touch in a particular location, measured by satellites.
 - **Infrared Radiation**: Heat energy that satellites can detect from space, which the Earth's surface naturally emits.
@@ -10,6 +9,7 @@
 - **Urban-Wildland Interface**: Places where cities or towns meet natural areas like forests, creating unique fire risks.
 - **Hotspot**: An area that shows much higher temperatures than the areas around it, which could indicate fire risk.
 - **Resampling**: The process of taking satellite data that shows temperature every 1km and making it show temperature every 500m instead, giving us more detailed information.
+- **EDA (Exploratory Data Analysis)**: The initial investigation of data to discover patterns, spot anomalies, and test assumptions using statistical summaries and visualizations.
 
 ## Part 1: Basic LST Understanding
 
@@ -35,12 +35,12 @@ The temperature of surfaces often differs from air temperature because:
 - Temperatures change throughout the day and night
 - Local conditions like shade or wind affect surface temperatures
 
-## Part 2: LST in Wildfire Prediction Project
+## Part 2: LST in Wildfire Spread Analysis
 
 ### Project Implementation
 
 #### Heat Hotspot Analysis
-We use LST to find areas that might catch fire by:
+We use LST to find areas that might affect fire spread by:
 - Finding places that heat up quickly, like dry grasslands
 - Identifying areas that stay hot for long periods
 - Watching how cities and natural areas store heat differently
@@ -85,7 +85,7 @@ This detailed temperature information helps us:
 Using more detailed temperature measurements helps us:
 - See four times more detail than before
 - Spot small areas that might be dangerous
-- Find potential fires earlier
+- Find potential fire spread paths earlier
 
 #### 2. Terrain Adaptation
 Better detail is especially important in areas with varied landscape because we can:
@@ -103,21 +103,21 @@ More detailed measurements help us tell the difference between:
 #### 4. Microclimate Identification
 With more detailed data, we can:
 - Find small areas with unusual temperature patterns
-- Spot places where fires might start
-- Identify natural features that might stop fires
+- Spot places where fires might spread more quickly
+- Identify natural features that might affect fire spread
 
-### ML Tool Benefits
+### Data Analysis Benefits
 
-#### 1. Data Quality
-- The computer model learns better because it can see finer details, like using a better camera to take clearer pictures.
-- Instead of having one temperature reading for a large area, the model learns from many smaller, more specific areas, which helps it understand local variations better.
+#### 1. Data Quality Assessment
+- Higher resolution data helps us better understand temperature patterns across different landscapes.
+- By examining temperature readings every 500m instead of every 1km, we can see how temperature varies within smaller areas.
 
-#### 2. Prediction Enhancement
-- The model makes better predictions because it can "see" details in smaller areas (every 500m instead of every 1km).
-- Having temperature readings for smaller areas helps the model better understand how temperature connects with other factors like vegetation and terrain.
+#### 2. Exploratory Analysis Enhancement
+- More detailed data allows us to examine relationships between temperature and other environmental factors more precisely.
+- We can better analyze how temperature patterns change across different types of terrain and vegetation.
 
-#### 3. Model Optimization
-- The model can spot subtle temperature changes that might indicate fire risk.
-- It better understands how temperature patterns relate to landscape features because it can analyze smaller areas.
-- It can identify smaller areas of high risk rather than marking large areas as risky.
-- With more detailed information about each area, the model can use more advanced techniques to make better predictions.
+#### 3. Future Model Planning
+- Understanding detailed temperature patterns helps us plan how to build a better prediction model.
+- Analyzing temperature variations at 500m resolution shows us which features might be most important for fire spread prediction.
+- This detailed analysis helps us identify which areas need more careful monitoring in the future model.
+- The insights from this analysis will guide decisions about what type of prediction model might work best.
