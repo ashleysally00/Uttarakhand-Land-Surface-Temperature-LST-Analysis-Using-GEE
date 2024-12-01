@@ -44,6 +44,7 @@ To reproduce the results, the following tools and libraries are required:
    - Go to the **Earth Engine Code Editor**
    - Upload a zipped shapefile of your region of interest (ROI) as a **Table Asset** in the **Assets** tab
    - Note the **Asset ID** (e.g., `users/your_username/Region_Boundary`)
+   - <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="600" alt="Uttarakhand Boundary Shapefile in GEE"/>
 
 ### Google Cloud Console
 1. **Create a Project**:
