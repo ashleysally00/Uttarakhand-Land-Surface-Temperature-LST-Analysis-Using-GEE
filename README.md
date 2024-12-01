@@ -6,6 +6,15 @@ To better predict how fires might behave in the future, we analyzed data from **
 
 The analysis uses Google Earth Engine (GEE) to process the `MODIS/061/MOD11A1` dataset. The data is clipped to any user-defined region using a shapefile, resampled to 500m resolution, and exported for further analysis.
 
+## Collaborator Checklist
+Before starting work on this project, ensure you have:
+- [ ] Google account with access to Google Colab
+- [ ] Google Earth Engine account with approved access
+- [ ] Google Cloud Console project set up
+- [ ] Google Drive API enabled (if planning to export results)
+- [ ] Access to the project's shapefile assets
+- [ ] Tested your GEE authentication in Colab
+
 ## Table of Contents
 1. [Objective](#objective)
 2. [Requirements](#requirements)
@@ -40,19 +49,22 @@ To reproduce the results, the following tools and libraries are required:
    - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
    - Apply for access (if not already approved)
 
+   ![Earth Engine Sign Up](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/get%20started.png?raw=true)
+
+2. **Choose Your Account Type:**
+   For academic research purposes, select "Unpaid Usage":
+
+   ![Earth Engine Account Type](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/unpaid.png?raw=true)
+
    - Once approved, you'll see the Code Editor interface:
 
-
    <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/GEE-code-editor.png" width="740" alt="Google Earth Engine Code Editor Interface"/>
-
 
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
    - In the **Assets** tab, click the "NEW" button and select "Shape files"
 
-
    - You'll see this upload interface:
-
 
    <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/uploadfile-shapefile-gee.png" width="300" alt="Shapefile upload interface in GEE"/>
 
@@ -66,10 +78,8 @@ To reproduce the results, the following tools and libraries are required:
 <br>
    <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="700" alt="Uttarakhand Boundary Shapefile in GEE"/>
 
-
    - Note the **Asset ID** for use in your code
    
-
 ### Google Cloud Console
 1. **Create a Project**:
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
@@ -90,6 +100,7 @@ To reproduce the results, the following tools and libraries are required:
 
 3. **Optional: Enable Google Drive API**:
    - If exporting results to Google Drive, enable the **Google Drive API**
+
 ### Google Colab Setup
 1. Open a new notebook in Colab
 
@@ -149,7 +160,8 @@ The following outputs are generated:
    - A stack of daily LST data as GeoTIFF or CSV files for analysis
 
 ## References
-
 - [Google Earth Engine Documentation](https://developers.google.com/earth-engine)
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
+   ```
+
