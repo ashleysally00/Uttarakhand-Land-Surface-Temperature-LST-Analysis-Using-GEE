@@ -69,8 +69,6 @@ To reproduce the results, the following tools and libraries are required:
 
    - Note the **Asset ID** for use in your code
    
-   
-   - Note the **Asset ID** for use in your code CopyRetryClaude does not have the ability to run the code it generates yet.
 
 ### Google Cloud Console
 1. **Create a Project**:
