@@ -166,3 +166,6 @@ The following outputs are generated:
    ```
 If you want to learn more about this data and gain a better understanding of what it means, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md).
 
+If you want to understand why this data is important from the perspective of a wildfire public information officer and volunteer firefighter, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md).
+
+
