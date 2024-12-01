@@ -3,7 +3,7 @@
 
 
 *I interviewed a wildfire PIO in Redding, CA to get background information on what types of data it would be most useful to collect when working to create a ML wildfire prediction tool using AI, subject: wildfire spread 
-The orange part about a page down is where it gets most helpful to this project - the information he gave me was very good.*
+
 
 **What fires were you involved in?** I worked on: August Complex Fire (2020), Hirz Fire (2018), McFarland and Monument Fires(2021), South Fire(2019).
 
