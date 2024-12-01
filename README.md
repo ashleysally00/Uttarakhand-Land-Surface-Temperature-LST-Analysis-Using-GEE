@@ -1,6 +1,6 @@
 # Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
-This repository contains the data preprocessing pipeline for a machine learning project focused on wildfire prediction. An important part of predicting wildfires is knowing the temperature at ground level. Land Surface Temperature (LST) data helps assess how heat interacts with vegetation and soil, which are critical factors in determining wildfire risk. To better predict how fires might behave in the future, we analyzed data from **January 2012 to June 30, 2024**, focusing on Uttarakhand (though you can modify the geographic region to suit your specific research needs).
+This repository contains a data preprocessing notebook for a machine learning project focused on wildfire prediction. An important part of predicting wildfires is knowing the temperature at ground level. Land Surface Temperature (LST) data helps assess how heat interacts with vegetation and soil, which are critical factors in determining wildfire risk. To better predict how fires might behave in the future, we analyzed data from **January 2012 to June 30, 2024**, focusing on Uttarakhand (though you can modify the geographic region to suit your specific research needs).
 
 The analysis uses Google Earth Engine (GEE) to process the `MODIS/061/MOD11A1` dataset. The data is clipped to any user-defined region using a shapefile, resampled to 500m resolution, and exported for further analysis.
 
