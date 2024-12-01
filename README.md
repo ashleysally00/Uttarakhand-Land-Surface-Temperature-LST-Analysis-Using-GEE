@@ -164,4 +164,5 @@ The following outputs are generated:
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
    ```
+If you want to learn more about this data and gain a better understanding of what it means, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md).
 
