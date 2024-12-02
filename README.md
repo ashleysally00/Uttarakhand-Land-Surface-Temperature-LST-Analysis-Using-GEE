@@ -151,6 +151,97 @@ To reproduce the results, the following tools and libraries are required:
 
 ## Output
 
+### 1. Mean LST (Day and Night)
+- The Colab notebook processes and exports the **mean daytime and nighttime LST** data for the entire time range (**January 2012 to June 30, 2024**).
+- These GeoTIFF files summarize the average Land Surface Temperature for the given period.
+- **Accessing the Output**:
+  - The files are saved in Google Drive under the folder `EarthEngineExports`.
+  - The filenames are:
+    - `Mean_LST_Day.tif` (for daytime mean)
+    - `Mean_LST_Night.tif` (for nighttime mean).
+
+### 2. Daily Time-Series LST (Day and Night)
+To extract daily LST data for the specified time range (**January 2012 to June 30, 2024**), additional Python code needs to be added to the Colab notebook. This processes and exports daily LST data as GeoTIFF files for both daytime and nighttime.
+
+### 3. Accessing Daily LST Outputs
+- **Google Drive Location**:
+  - Daily LST outputs are saved in the folder `EarthEngineExports/Daily` in your Google Drive.
+  - Each file is named in the format:
+    - `LST_Day_YYYY-MM-DD.tif` (e.g., `LST_Day_2012-01-01.tif` for daytime LST on January 1, 2012)
+    - `LST_Night_YYYY-MM-DD.tif` (e.g., `LST_Night_2012-01-01.tif` for nighttime LST on January 1, 2012).
+
+- **Processing Time**:
+  - Exporting daily LST data for an extended time range (**January 2012 to June 30, 2024**) may take a while.
+  - Below is an example of the Colab output during the process:
+
+ <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/processingdaily-LST.png" alt="Processing Daily LST Data" width="500"/>
+
+
+
+#### Python Code for Daily LST Exports
+Add the following Python code to the end of your Colab notebook to generate and export the daily LST data:
+
+```python
+import datetime
+import ee
+
+# Authenticate and initialize Earth Engine (if not already done)
+ee.Authenticate()
+ee.Initialize()
+
+# Load the MODIS LST dataset
+modis = ee.ImageCollection("MODIS/061/MOD11A1")
+
+# Load the Uttarakhand shapefile (replace with your shapefile's Asset ID)
+uttarakhand = ee.FeatureCollection("projects/ee-your-project-id/assets/Uttarakhand-boundary")
+
+# Generate a list of dates from 2012-01-01 to 2024-06-30
+start_date = datetime.date(2012, 1, 1)
+end_date = datetime.date(2024, 6, 30)
+dates = [start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1)]
+
+# Iterate through each date and process LST data
+for date in dates:
+    date_str = date.strftime('%Y-%m-%d')
+    print(f"Processing LST data for {date_str}...")
+    
+    # Filter MODIS dataset for the specific date
+    daily_modis = modis.filterDate(date_str, (date + datetime.timedelta(days=1)).strftime('%Y-%m-%d'))
+    
+    # Clip and resample to 500m
+    daily_modis_clipped = daily_modis.map(lambda img: img.clip(uttarakhand))
+    daily_modis_resampled = daily_modis_clipped.map(
+        lambda img: img.resample('bilinear').reproject(crs='EPSG:4326', scale=500)
+    )
+    
+    # Extract Daytime and Nighttime LST
+    daily_lst_day = daily_modis_resampled.select('LST_Day_1km').mean().multiply(0.02).rename('LST_Day_K')
+    daily_lst_night = daily_modis_resampled.select('LST_Night_1km').mean().multiply(0.02).rename('LST_Night_K')
+
+    # Export daily data to Google Drive
+    ee.batch.Export.image.toDrive(
+        image=daily_lst_day,
+        description=f'LST_Day_{date_str}',
+        folder='EarthEngineExports/Daily',
+        fileNamePrefix=f'LST_Day_{date_str}',
+        region=uttarakhand.geometry(),
+        scale=500,
+        crs='EPSG:4326',
+        maxPixels=1e13
+    ).start()
+
+    ee.batch.Export.image.toDrive(
+        image=daily_lst_night,
+        description=f'LST_Night_{date_str}',
+        folder='EarthEngineExports/Daily',
+        fileNamePrefix=f'LST_Night_{date_str}',
+        region=uttarakhand.geometry(),
+        scale=500,
+        crs='EPSG:4326',
+        maxPixels=1e13
+    ).start()
+
+
 The following outputs are generated:
 
 1. **Mean LST (Day and Night)**:
@@ -164,7 +255,7 @@ The following outputs are generated:
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
    ```
-If you want to learn more about what this means, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
+If you want to learn more about what this data means, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
 
 To understand why this data matters from the perspective of a wildfire public information officer and volunteer firefighter, you can read more in [this interview](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md).
 
