@@ -22,7 +22,8 @@ Before starting work on this project, ensure you have:
 4. [Data Workflow](#data-workflow)
 5. [How to Use](#how-to-use)
 6. [Output](#output)
-7. [References](#references)
+7. [Handling Task Queue Errors](#handling-task-queue-errors)
+8. [Further Exploration](#further-exploration)
 
 ## Objective
 
