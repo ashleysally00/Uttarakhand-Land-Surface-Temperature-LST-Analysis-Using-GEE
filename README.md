@@ -255,7 +255,72 @@ The following outputs are generated:
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
    ```
-If you want to learn more about what this data means, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
+## Handling Task Queue Errors
+
+When processing and downloading large datasets such as daily LST data over a long time range, you may encounter the following error:
+
+![Too Many Tasks Error](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/too-many-tasks-gee.png)
+
+### What Does This Mean?
+
+This error occurs because Google Earth Engine enforces a limit of 3000 queued tasks per user. When exporting data for each day across multiple years, the number of tasks can easily exceed this limit.
+Solutions to Address the Task Limit
+1. Filter by Year and Process One Year at a Time
+   To avoid submitting too many tasks at once, you can filter the dataset to process and export data one year at a time:
+```
+# Define the year to process
+year = 2012
+start_date = datetime.date(year, 1, 1)
+end_date = datetime.date(year, 12, 31)
+dates = [start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1)]
+
+# Iterate through each date and process LST data for the selected year
+for date in dates:
+    date_str = date.strftime('%Y-%m-%d')
+    print(f"Processing LST data for {date_str}...")
+    
+    # Rest of your processing code remains the same
+```
+2. Use Task Monitoring
+   To avoid overwhelming the task queue, modify the code to submit tasks one at a time and wait for their completion:
+
+### Export daily data to Google Drive with task monitoring
+```
+export_task_day = ee.batch.Export.image.toDrive(
+    image=daily_lst_day,
+    description=f'LST_Day_{date_str}',
+    folder='EarthEngineExports/Daily',
+    fileNamePrefix=f'LST_Day_{date_str}',
+    region=uttarakhand.geometry(),
+    scale=500,
+    crs='EPSG:4326',
+    maxPixels=1e13
+)
+export_task_day.start()
+
+export_task_night = ee.batch.Export.image.toDrive(
+    image=daily_lst_night,
+    description=f'LST_Night_{date_str}',
+    folder='EarthEngineExports/Daily',
+    fileNamePrefix=f'LST_Night_{date_str}',
+    region=uttarakhand.geometry(),
+    scale=500,
+    crs='EPSG:4326',
+    maxPixels=1e13
+)
+export_task_night.start()
+```
+
+### Wait for the tasks to complete before starting the next iteration
+``
+while export_task_day.active() or export_task_night.active():
+    print(f"Waiting for tasks to complete for {date_str}...")
+    time.sleep(60)  # Wait for 60
+``
+
+## Further Exploration 
+
+If you want to learn more about what this data means, you can find further explanation [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
 
 To understand why this data matters from the perspective of a wildfire public information officer and volunteer firefighter, you can read more in [this interview](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md).
 
