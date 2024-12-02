@@ -321,7 +321,7 @@ while export_task_day.active() or export_task_night.active():
 
 ## Further Exploration 
 
-If you want to learn more about what this data means, you can find further explanation [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
+If you'd like to delve deeper into the significance of this data and its role in wildfire prediction, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This section also includes a glossary to help you better understand the terminology.
 
 To understand why this data matters from the perspective of a wildfire public information officer and volunteer firefighter, you can read more in [this interview](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md).
 
