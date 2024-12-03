@@ -1,7 +1,12 @@
 
-# Interview with Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
+# Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
 
-I interviewed a wildfire public information officer and volunteer firefighter in Redding, California, in order to gain insight into what types of data would be most useful when developing a machine learning-based wildfire prediction tool with a focus on wildfire spread. My goal was to understand the perspective of someone who had been present during many wildfires as they unfolded.
+*For more detailed information on this project about creating a machine learning tool for wildfire spread prediction, you can check out my project repo on GitHub: [Uttarakhand Land Surface Temperature (LST) Analysis Using GEE](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/README.md)*
+
+*Please note that the tif file for the mean LST day is too large to include directly in my repository. However, if you'd like to access it, you can view or download it from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)*
+
+---
+
 
 **What fires were you involved in?** I worked on: August Complex Fire (2020), Hirz Fire (2018), McFarland and Monument Fires(2021), South Fire(2019).
 
