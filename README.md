@@ -321,6 +321,47 @@ while export_task_day.active() or export_task_night.active():
     time.sleep(60)  # Wait for 60
 ``
 
+# Handling New;y Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
+
+## Step 1: Create a DagsHub Account
+- Go to DagsHub and create an account if you don't already have one
+- Verify your email address to activate your account
+- Once logged in, create a new repository or use an existing one
+
+## Step 2: Locate the GEE Files in Google Drive
+- After exporting data from GEE, navigate to Google Drive
+- Find the folder with exported data (.tif/GeoTIFF files)
+- Download .tif files to your local machine
+
+## Step 3: Upload Data to DagsHub
+
+### Why Use DagsHub?
+- Large File Support: Handle files too large for GitHub
+- Version Control for Data: Manage data with DVC or Git
+- Collaboration-Friendly: Integrates with GitHub
+
+### Upload Methods
+
+**Connect Your GitHub Repository:**
+- Link GitHub repository to DagsHub
+- Synchronize files and changes
+
+**Using the Command Line Interface (CLI):**
+- Open terminal or VS Code integrated CLI
+- Navigate to .tif files folder
+- Add, commit, and push files:
+```bash
+git add your_file.tif
+git commit -m "Add LST data from GEE"
+git push origin main
+```
+
+**DagsHub GUI:**
+- Log in to DagsHub and navigate to repository
+- Use Upload button for .tif files
+
+*Note: Some file types may not upload properly through GUI. For large files or unsupported formats, use CLI.*
+
 ## Further Exploration 
 
 If you'd like to delve deeper into the significance of this data and its role in wildfire prediction, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This resource includes a detailed glossary to clarify key terms and concepts relevant to the analysis.
