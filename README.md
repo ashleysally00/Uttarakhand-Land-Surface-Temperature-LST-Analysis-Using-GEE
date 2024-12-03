@@ -324,47 +324,58 @@ while export_task_day.active() or export_task_night.active():
 ## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
 ### Step 1: Create a DagsHub Account
-- Go to DagsHub and create an account if you don't already have one
-- Verify your email address to activate your account
-- Once logged in, create a new repository or use an existing one
+1. Go to [DagsHub Sign Up](https://dagshub.com/user/sign_up) and **create an account** if you don’t already have one.
+2. You can sign up using your GitHub or Google account, or by providing your email address.
+3. Verify your email address to activate your account.
+4. Once logged in, create a new repository for your project or use an existing one.
+
+---
 
 ### Step 2: Locate the GEE Files in Google Drive
-- After exporting data from GEE, navigate to Google Drive
-- Find the folder with exported data (.tif/GeoTIFF files)
-- Download .tif files to your local machine
+1. After exporting data from GEE, navigate to your **Google Drive**.
+2. Find the folder with exported data. The files will typically have a `.tif` (GeoTIFF) file extension.
+3. Download the `.tif` files to your local machine.
+
+---
 
 ### Step 3: Upload Data to DagsHub
 
-### Why Use DagsHub?
-- Large File Support: Handle files too large for GitHub
-- Version Control for Data: Manage data with DVC or Git
-- Collaboration-Friendly: Integrates with GitHub
+#### Why Use DagsHub?
+- **Large File Support**: Handle files that are too large for GitHub.
+- **Version Control for Data**: Manage your data with **DVC (Data Version Control)** or Git.
+- **Collaboration-Friendly**: Integrates seamlessly with GitHub for efficient teamwork.
 
-### Upload Methods
+#### Upload Methods
+1. **Connect Your GitHub Repository**:
+   - Link your GitHub repository to DagsHub.
+   - Synchronize files and changes between the two platforms.
 
-**Connect Your GitHub Repository:**
-- Link GitHub repository to DagsHub
-- Synchronize files and changes
+2. **Using the Command Line Interface (CLI)**:
+   - Open your terminal or the integrated CLI in Visual Studio Code.
+   - Navigate to the folder containing your `.tif` files.
+   - Add, commit, and push your files to DagsHub:
+     ```bash
+     git add your_file.tif
+     git commit -m "Add LST data from GEE"
+     git push origin main
+     ```
 
-**Using the Command Line Interface (CLI):**
-- Open terminal or VS Code integrated CLI
-- Navigate to .tif files folder
-- Add, commit, and push files:
-```bash
-git add your_file.tif
-git commit -m "Add LST data from GEE"
-git push origin main
-```
+3. **DagsHub GUI**:
+   - Log in to [DagsHub](https://dagshub.com) and navigate to your repository.
+   - Use the **Upload** button to add your `.tif` files.
 
-**DagsHub GUI:**
-- Log in to DagsHub and navigate to repository
-- Use Upload button for .tif files
+   *Note: Some file types may not upload properly through the GUI. For large files or unsupported formats, use the CLI.*
 
-*Note: Some file types may not upload properly through GUI. For large files or unsupported formats, use CLI.*
+---
 
-## Further Exploration 
+## Further Exploration
 
-If you'd like to delve deeper into the significance of this data and its role in wildfire prediction, you can read more [here](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md). This resource includes a detailed glossary to clarify key terms and concepts relevant to the analysis.
+If you'd like to delve deeper into the significance of this data and its role in wildfire prediction, explore the following resources:
 
-To understand why this data matters from the perspective of a wildfire public information officer and volunteer firefighter, you can read more in [this interview](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md).
+1. **[Understanding the Data](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md)**:
+   - This resource includes a detailed glossary to clarify key terms and concepts relevant to the analysis.
+
+2. **[Interview with a Wildfire PIO](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md)**:
+   - Gain insights from a public information officer and volunteer firefighter about the importance of LST data in wildfire management.
+
 
