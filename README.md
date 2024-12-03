@@ -323,17 +323,17 @@ while export_task_day.active() or export_task_night.active():
 
 ## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
-## Step 1: Create a DagsHub Account
+### Step 1: Create a DagsHub Account
 - Go to DagsHub and create an account if you don't already have one
 - Verify your email address to activate your account
 - Once logged in, create a new repository or use an existing one
 
-## Step 2: Locate the GEE Files in Google Drive
+### Step 2: Locate the GEE Files in Google Drive
 - After exporting data from GEE, navigate to Google Drive
 - Find the folder with exported data (.tif/GeoTIFF files)
 - Download .tif files to your local machine
 
-## Step 3: Upload Data to DagsHub
+### Step 3: Upload Data to DagsHub
 
 ### Why Use DagsHub?
 - Large File Support: Handle files too large for GitHub
