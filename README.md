@@ -321,7 +321,7 @@ while export_task_day.active() or export_task_night.active():
     time.sleep(60)  # Wait for 60
 ``
 
-# Handling New;y Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
+## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
 ## Step 1: Create a DagsHub Account
 - Go to DagsHub and create an account if you don't already have one
