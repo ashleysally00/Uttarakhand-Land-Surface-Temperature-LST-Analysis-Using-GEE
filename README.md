@@ -323,6 +323,11 @@ while export_task_day.active() or export_task_night.active():
 
 ## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
+#### Why Use DagsHub?
+- **Large File Support**: Handle files that are too large for GitHub.
+- **Version Control for Data**: Manage your data with **DVC (Data Version Control)** or Git.
+- **Collaboration-Friendly**: Integrates seamlessly with GitHub for efficient teamwork.
+
 ### Step 1: Create a DagsHub Account
 1. Go to [DagsHub Sign Up](https://dagshub.com/user/sign_up) and **create an account** if you don’t already have one.
 2. You can sign up using your GitHub or Google account, or by providing your email address.
@@ -339,11 +344,6 @@ while export_task_day.active() or export_task_night.active():
 ---
 
 ### Step 3: Upload Data to DagsHub
-
-#### Why Use DagsHub?
-- **Large File Support**: Handle files that are too large for GitHub.
-- **Version Control for Data**: Manage your data with **DVC (Data Version Control)** or Git.
-- **Collaboration-Friendly**: Integrates seamlessly with GitHub for efficient teamwork.
 
 #### Upload Methods
 1. **Connect Your GitHub Repository**:
