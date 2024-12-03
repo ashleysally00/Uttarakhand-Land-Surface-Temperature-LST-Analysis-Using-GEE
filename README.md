@@ -320,8 +320,7 @@ while export_task_day.active() or export_task_night.active():
     print(f"Waiting for tasks to complete for {date_str}...")
     time.sleep(60)  # Wait for 60
 ``
----
-
+<br><br>
 ## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
 #### Why Use DagsHub?
