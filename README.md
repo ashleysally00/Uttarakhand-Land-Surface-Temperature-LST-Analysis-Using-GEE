@@ -6,7 +6,7 @@ To better predict how fires might behave in the future, we analyzed data from **
 
 The analysis uses Google Earth Engine (GEE) to process the `MODIS/061/MOD11A1` dataset. The data is clipped to any user-defined region using a shapefile, resampled to 500m resolution, and exported for further analysis.
 
-The file for the mean LST day is too large to include directly in this repository. However, if you'd like to access it, you can view or download it from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)
+The files for the mean LST day and for 2024 mean LST day and 2024 mean LST night are too large to include directly in this repository. However, if you'd like to access them, you can view or download them from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)
 
 ## Collaborator Checklist
 Before starting work on this project, ensure you have:
