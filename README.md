@@ -243,6 +243,28 @@ for date in dates:
         crs='EPSG:4326',
         maxPixels=1e13
     ).start()
+```
+## How to Monitor Your Export Progress
+
+When processing large datasets, it's helpful to monitor the progress of your export tasks in the **Inspector Console** of the Google Earth Engine Code Editor. After you run the code to export files, you can check the **Tasks tab** to see the status of each export. This allows you to:
+
+* Confirm that the export has started.
+* See the approximate time it will take for the file(s) to download.
+* Identify and debug any errors if the task fails.
+
+Below is an example of what the **Inspector Console** looks like while a task is running:
+
+![Inspector Console Screenshot](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/inspectorconsole.png)
+
+## Steps to Monitor Exports
+
+1. Go to the **Tasks tab** in the Google Earth Engine Code Editor.
+2. Look for your export task(s). Each task will have:
+   * **Phase**: This shows whether the task is queued, running, or completed.
+   * **Submitted Time**: When the task was initiated.
+   * **Estimated Time**: The approximate time left for completion (if available).
+3. Wait for the task's status to change to **Completed**.
+4. Once completed, the exported file(s) can be found in the folder you specified in your code (e.g., `EarthEngineExports` in Google Drive).
 
 
 The following outputs are generated:
