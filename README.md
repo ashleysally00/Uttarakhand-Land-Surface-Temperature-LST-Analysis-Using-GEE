@@ -180,9 +180,13 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
 
  <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/processingdaily-LST.png" alt="Processing Daily LST Data" width="500"/>
 
+## Data Visualization
+For a detailed analysis of the LST patterns and their implications for wildfire prediction, check out our [visualization documentation](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md). This includes:
+* Mean Daytime and Nighttime LST maps for 2024
+* Analysis of temperature patterns and their relationship to wildfire risk
+* Detailed explanation of map features and interpretation
 
-
-#### Python Code for Daily LST Exports
+## Python Code for Daily LST Exports
 Add the following Python code to the end of your Colab notebook to generate and export the daily LST data:
 
 ```python
