@@ -56,4 +56,69 @@ The MODIS/061/MOD11A1 dataset was loaded, which provides daily Land Surface Temp
 The dataset was clipped to the Uttarakhand boundary using a shapefile stored in the GEE assets.
 
 ### Date Range
-The dataset was filtered for the year
+The dataset was filtered for the year 2024, selecting images between 2024-01-01 and 2024-12-31.
+
+### Daytime and Nighttime LST Bands
+Two specific bands were extracted:
+
+- LST_Day_1km: Daytime surface temperature
+- LST_Night_1km: Nighttime surface temperature
+
+### Mean Calculation
+The mean was computed over the entire year for both daytime and nighttime bands to generate a single annual summary for each.
+
+### Scaling
+The raw MODIS data values were scaled to Kelvin by multiplying by 0.02.
+
+###Visualization
+The processed LST data was visualized on interactive maps using the geemap library, with a color gradient ranging from blue (cool) to red (warm).
+
+### Python Code for Map Creation
+The following Python code was used to create the Mean Daytime LST Map:
+```
+# Install required libraries (if not installed)
+!pip install geemap earthengine-api
+
+# Import libraries
+import ee
+import geemap
+
+# Authenticate and Initialize Earth Engine
+ee.Authenticate()
+ee.Initialize()
+
+# Load the Uttarakhand shapefile from Earth Engine Assets
+uttarakhand = ee.FeatureCollection("projects/ee-ashleysally00/assets/Uttarakhand-boundary")
+
+# Load the MODIS dataset
+modis = ee.ImageCollection("MODIS/061/MOD11A1")
+
+# Clip MODIS dataset to the Uttarakhand boundary
+modis_clipped = modis.map(lambda img: img.clip(uttarakhand))
+
+# Define the date range (e.g., 2024)
+start_date = '2024-01-01'
+end_date = '2024-12-31'
+
+# Filter MODIS dataset for the date range
+modis_filtered = modis_clipped.filterDate(start_date, end_date)
+
+# Extract and process the daytime LST band
+mean_lst_day = modis_filtered.select('LST_Day_1km').mean().multiply(0.02).rename('Mean_LST_Day')
+
+# Initialize a map using geemap
+Map = geemap.Map()
+
+# Center the map on Uttarakhand
+Map.centerObject(uttarakhand, 8)
+
+# Add the mean daytime LST layer to the map
+Map.addLayer(
+    mean_lst_day, 
+    {'min': 250, 'max': 320, 'palette': ['blue', 'green', 'red']}, 
+    'Mean Daytime LST'
+)
+
+# Display the map
+Map
+```
