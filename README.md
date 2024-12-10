@@ -27,7 +27,7 @@ Before starting work on this project, ensure you have:
 7. [Handling Task Queue Errors](#handling-task-queue-errors)
 8. [Further Exploration](#further-exploration)
 9. [Data Visualization](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md)
-10. [Glossary & Terms](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md) - *Definitions of key terms like LST and other technical concepts*
+10. [Glossary & Terms](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md) - *definitions of key terms like LST and other technical concepts*
 
 ## Objective
 
