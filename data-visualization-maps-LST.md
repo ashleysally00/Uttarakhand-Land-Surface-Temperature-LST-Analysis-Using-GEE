@@ -70,7 +70,7 @@ The mean was computed over the entire year for both daytime and nighttime bands 
 ### Scaling
 The raw MODIS data values were scaled to Kelvin by multiplying by 0.02.
 
-###Visualization
+### Visualization
 The processed LST data was visualized on interactive maps using the geemap library, with a color gradient ranging from blue (cool) to red (warm).
 
 ### Python Code for Map Creation
