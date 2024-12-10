@@ -122,3 +122,53 @@ Map.addLayer(
 # Display the map
 Map
 ```
+The following Python code was used to create the Mean Nighttime LST Map:
+
+```
+# Install required libraries (if not installed)
+!pip install geemap earthengine-api
+
+# Import libraries
+import ee
+import geemap
+
+# Authenticate and Initialize Earth Engine
+ee.Authenticate()
+ee.Initialize()
+
+# Load the Uttarakhand shapefile from Earth Engine Assets
+uttarakhand = ee.FeatureCollection("projects/ee-ashleysally00/assets/Uttarakhand-boundary")
+
+# Load the MODIS dataset
+modis = ee.ImageCollection("MODIS/061/MOD11A1")
+
+# Clip MODIS dataset to the Uttarakhand boundary
+modis_clipped = modis.map(lambda img: img.clip(uttarakhand))
+
+# Define the date range (e.g., 2024)
+start_date = '2024-01-01'
+end_date = '2024-12-31'
+
+# Filter MODIS dataset for the date range
+modis_filtered = modis_clipped.filterDate(start_date, end_date)
+
+# Extract and process the nighttime LST band
+MeanLSTNight2024 = modis_filtered.select('LST_Night_1km').mean().multiply(0.02).rename('Mean_LST_Night_2024')
+
+# Initialize a map using geemap
+Map = geemap.Map()
+
+# Center the map on Uttarakhand
+Map.centerObject(uttarakhand, 8)
+
+# Add the mean nighttime LST layer to the map
+Map.addLayer(
+    MeanLSTNight2024, 
+    {'min': 250, 'max': 320, 'palette': ['blue', 'green', 'red']}, 
+    'Mean Nighttime LST 2024'
+)
+
+# Display the map
+Map
+
+```
