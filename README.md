@@ -53,8 +53,6 @@ ___
    - Visit [Google Earth Engine](https://earthengine.google.com/) and sign in with your Google account
    - Apply for access (if not already approved)
 
-   ![Earth Engine Sign Up](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/get%20started.png?raw=true)
-
 2. **Choose Your Account Type:**
    For academic research purposes, select "Unpaid Usage":
 
