@@ -282,103 +282,101 @@ The following outputs are generated:
 - [Google Earth Engine Documentation](https://developers.google.com/earth-engine)
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
-```
-___
+
 ## Handling Task Queue Errors
 
 When processing and downloading large datasets such as daily LST data over a long time range, you may encounter the following error:
 
 ![Too Many Tasks Error](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/too-many-tasks-gee.png)
-___
+
 ### What Does This Mean?
 
 This error occurs because Google Earth Engine enforces a limit of 3000 queued tasks per user. When exporting data for each day across multiple years, the number of tasks can easily exceed this limit.
-Solutions to Address the Task Limit
-1. Filter by Year and Process One Year at a Time
-   To avoid submitting too many tasks at once, you can filter the dataset to process and export data one year at a time:
-```
-# Define the year to process
-year = 2012
-start_date = datetime.date(year, 1, 1)
-end_date = datetime.date(year, 12, 31)
-dates = [start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1)]
 
-# Iterate through each date and process LST data for the selected year
-for date in dates:
-    date_str = date.strftime('%Y-%m-%d')
-    print(f"Processing LST data for {date_str}...")
-    
-    # Rest of your processing code remains the same
-```
-2. Use Task Monitoring
+### Solutions to Address the Task Limit
+
+1. **Filter by Year and Process One Year at a Time**
+   
+   To avoid submitting too many tasks at once, you can filter the dataset to process and export data one year at a time:
+
+   ```python
+   # Define the year to process
+   year = 2012
+   start_date = datetime.date(year, 1, 1)
+   end_date = datetime.date(year, 12, 31)
+   dates = [start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1)]
+
+   # Iterate through each date and process LST data for the selected year
+   for date in dates:
+       date_str = date.strftime('%Y-%m-%d')
+       print(f"Processing LST data for {date_str}...")
+     
+   ```
+
+2. **Use Task Monitoring**
+   
    To avoid overwhelming the task queue, modify the code to submit tasks one at a time and wait for their completion:
 
-### Export daily data to Google Drive with task monitoring
-```
-export_task_day = ee.batch.Export.image.toDrive(
-    image=daily_lst_day,
-    description=f'LST_Day_{date_str}',
-    folder='EarthEngineExports/Daily',
-    fileNamePrefix=f'LST_Day_{date_str}',
-    region=uttarakhand.geometry(),
-    scale=500,
-    crs='EPSG:4326',
-    maxPixels=1e13
-)
-export_task_day.start()
+   ```python
+   # Export daily data to Google Drive with task monitoring
+   export_task_day = ee.batch.Export.image.toDrive(
+       image=daily_lst_day,
+       description=f'LST_Day_{date_str}',
+       folder='EarthEngineExports/Daily',
+       fileNamePrefix=f'LST_Day_{date_str}',
+       region=uttarakhand.geometry(),
+       scale=500,
+       crs='EPSG:4326',
+       maxPixels=1e13
+   )
+   export_task_day.start()
 
-export_task_night = ee.batch.Export.image.toDrive(
-    image=daily_lst_night,
-    description=f'LST_Night_{date_str}',
-    folder='EarthEngineExports/Daily',
-    fileNamePrefix=f'LST_Night_{date_str}',
-    region=uttarakhand.geometry(),
-    scale=500,
-    crs='EPSG:4326',
-    maxPixels=1e13
-)
-export_task_night.start()
-```
+   export_task_night = ee.batch.Export.image.toDrive(
+       image=daily_lst_night,
+       description=f'LST_Night_{date_str}',
+       folder='EarthEngineExports/Daily',
+       fileNamePrefix=f'LST_Night_{date_str}',
+       region=uttarakhand.geometry(),
+       scale=500,
+       crs='EPSG:4326',
+       maxPixels=1e13
+   )
+   export_task_night.start()
 
-### Wait for the tasks to complete before starting the next iteration
-``
-while export_task_day.active() or export_task_night.active():
-    print(f"Waiting for tasks to complete for {date_str}...")
-    time.sleep(60)  # Wait for 60
-``
-<br><br>
+   # Wait for the tasks to complete before starting the next iteration
+   while export_task_day.active() or export_task_night.active():
+       print(f"Waiting for tasks to complete for {date_str}...")
+       time.sleep(60)  # Wait for 60 seconds before checking again
+   ```
+
 ## Handling Exported LST Data from GEE and Uploading It to DagsHub for Use in Your Team Project
 
-#### Why Use DagsHub?
-- **Large File Support**: Handle files that are too large for GitHub.
-- **Version Control for Data**: Manage your data with **DVC (Data Version Control)** or Git.
-- **Collaboration-Friendly**: Integrates seamlessly with GitHub for efficient teamwork.
+### Why Use DagsHub?
+- **Large File Support**: Handle files that are too large for GitHub
+- **Version Control for Data**: Manage your data with **DVC (Data Version Control)** or Git
+- **Collaboration-Friendly**: Integrates seamlessly with GitHub for efficient teamwork
 
 ### Step 1: Create a DagsHub Account
-1. Go to [DagsHub Sign Up](https://dagshub.com/user/sign_up) and **create an account** if you don’t already have one.
-2. You can sign up using your GitHub or Google account, or by providing your email address.
-3. Verify your email address to activate your account.
-4. Once logged in, create a new repository for your project or use an existing one.
-
----
+1. Go to [DagsHub Sign Up](https://dagshub.com/user/sign_up) and **create an account** if you don't already have one
+2. You can sign up using your GitHub or Google account, or by providing your email address
+3. Verify your email address to activate your account
+4. Once logged in, create a new repository for your project or use an existing one
 
 ### Step 2: Locate the GEE Files in Google Drive
-1. After exporting data from GEE, navigate to your **Google Drive**.
-2. Find the folder with exported data. The files will typically have a `.tif` (GeoTIFF) file extension.
-3. Download the `.tif` files to your local machine.
-
----
+1. After exporting data from GEE, navigate to your **Google Drive**
+2. Find the folder with exported data. The files will typically have a `.tif` (GeoTIFF) file extension
+3. Download the `.tif` files to your local machine
 
 ### Step 3: Upload Data to DagsHub
 
 #### Upload Methods
 1. **Connect Your GitHub Repository**:
-   - Link your GitHub repository to DagsHub.
-   - Synchronize files and changes between the two platforms.
+   - Link your GitHub repository to DagsHub
+   - Synchronize files and changes between the two platforms
 
 2. **Using the Command Line Interface (CLI)**:
-   - Open your terminal or the integrated CLI in Visual Studio Code.
-   - Navigate to the folder containing your `.tif` files.
+   - Open your terminal or the integrated CLI in Visual Studio Code
+   - Navigate to the folder containing your `.tif` files
    - Add, commit, and push your files to DagsHub:
      ```bash
      git add your_file.tif
@@ -387,12 +385,10 @@ while export_task_day.active() or export_task_night.active():
      ```
 
 3. **DagsHub GUI**:
-   - Log in to [DagsHub](https://dagshub.com) and navigate to your repository.
-   - Use the **Upload** button to add your `.tif` files.
+   - Log in to [DagsHub](https://dagshub.com) and navigate to your repository
+   - Use the **Upload** button to add your `.tif` files
 
    *Note: Some file types may not upload properly through the GUI. For large files or unsupported formats, use the CLI.*
-
----
 
 ## Further Exploration
 
