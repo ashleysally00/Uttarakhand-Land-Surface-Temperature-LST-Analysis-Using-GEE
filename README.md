@@ -26,6 +26,7 @@ Before starting work on this project, ensure you have:
 6. [Output](#output)
 7. [Handling Task Queue Errors](#handling-task-queue-errors)
 8. [Further Exploration](#further-exploration)
+9. [Data Visualization](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md)
 
 ## Objective
 
