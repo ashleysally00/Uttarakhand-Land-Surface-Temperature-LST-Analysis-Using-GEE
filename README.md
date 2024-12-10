@@ -45,7 +45,7 @@ To reproduce the results, the following tools and libraries are required:
 - Python libraries:
   - `earthengine-api`
   - `geemap`
-
+___
 ## Setup Instructions
 
 ### Google Earth Engine
@@ -83,7 +83,7 @@ To reproduce the results, the following tools and libraries are required:
    <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="700" alt="Uttarakhand Boundary Shapefile in GEE"/>
 
    - Note the **Asset ID** for use in your code
-   
+___   
 ### Google Cloud Console
 1. **Create a Project**:
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
@@ -104,7 +104,7 @@ To reproduce the results, the following tools and libraries are required:
 
 3. **Optional: Enable Google Drive API**:
    - If exporting results to Google Drive, enable the **Google Drive API**
-
+___
 ### Google Colab Setup
 1. Open a new notebook in Colab
 
@@ -119,7 +119,7 @@ To reproduce the results, the following tools and libraries are required:
    ee.Authenticate()
    ee.Initialize()
    ```
-
+___
 ## Data Workflow
 
 1. **Load MODIS Dataset**:
@@ -152,7 +152,7 @@ To reproduce the results, the following tools and libraries are required:
 
 4. **Download the Outputs**:
    - Access the exported files from your Google Drive folder (default: EarthEngineExports)
-
+___
 ## Output
 
 ### 1. Mean LST (Day and Night)
@@ -179,7 +179,7 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
   - Below is an example of the Colab output during the process:
 
  <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/processingdaily-LST.png" alt="Processing Daily LST Data" width="500"/>
-
+___
 ## Data Visualization
 For a detailed analysis of the LST patterns and their implications for wildfire prediction, check out our [visualization documentation](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md). This includes:
 * Mean Daytime and Nighttime LST maps for 2024
@@ -284,13 +284,14 @@ The following outputs are generated:
 - [Google Earth Engine Documentation](https://developers.google.com/earth-engine)
 - [MODIS/061/MOD11A1 Dataset](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1)
 - [Google Colab Documentation](https://colab.research.google.com/)
-   ```
+```
+___
 ## Handling Task Queue Errors
 
 When processing and downloading large datasets such as daily LST data over a long time range, you may encounter the following error:
 
 ![Too Many Tasks Error](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/too-many-tasks-gee.png)
-
+___
 ### What Does This Mean?
 
 This error occurs because Google Earth Engine enforces a limit of 3000 queued tasks per user. When exporting data for each day across multiple years, the number of tasks can easily exceed this limit.
