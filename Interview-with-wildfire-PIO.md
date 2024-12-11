@@ -20,7 +20,7 @@ They wanted people to be able to be prepared for when the landslides came after 
 
 Some of the areas where they told people where it would be safe, it was not. Maybe the models for predicting rain were wrong. The problem was that they based their model on a predicted amount of rain. They got the highest amount of rain that you could possibly get over a 1000-year period. Maybe they were wrong.
 
-There were those years where fires were insane, and we do not know why, like in 2017 (Coast of California burned), 2018 (Northern and Central Valley, Redding Chico), 2021(Sierras: Dixie Fire). It is probably a combination of long-term weather patterns, long term fuel conditions, which then depend on the weather patterns over the past 100 years. Also, humans can be good at finding patterns where they do not exist. But it seems to me more than a coincidence that we had all these fires all in one year, all within 100 miles of each other. Including the Coastal Fires. 
+There were those years where fires were insane, and we do not know why, like in 2017 (Coast of California burned), 2018 (Northern and Central Valley, Redding, Chico), 2021(Sierras: Dixie Fire). It is probably a combination of long-term weather patterns, long term fuel conditions, which then depend on the weather patterns over the past 100 years. Also, humans can be good at finding patterns where they do not exist. But it seems to me more than a coincidence that we had all these fires all in one year, all within 100 miles of each other. Including the Coastal Fires. 
 
 ## Prediction, Containment and Firelines
 
