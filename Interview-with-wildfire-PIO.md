@@ -1,7 +1,8 @@
 
 # Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
 
-*Please note that the tif files for the mean LST day and night are too large to include directly in my repository. However, if you'd like to access them, you can view or download the files from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)*
+*Please note that the tif files for the mean LST day and night are too large to include directly in my repository. However, if you'd like to access them, you can view or download the files from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)* 
+Also please note that this repo is my own research, data collection, and EDA that I am currently doing towards a group machine learning project that is still underway. I will post a link to the project when it is done, here. 
 
 ---
 I interviewed a wildfire public information officer and volunteer firefighter in Redding, California, in order to gain insight into what types of data would be most useful for developing a machine learning-based wildfire prediction tool with a focus on wildfire spread. My goal was to understand the perspective of someone who had been present during many wildfires as they unfolded.
