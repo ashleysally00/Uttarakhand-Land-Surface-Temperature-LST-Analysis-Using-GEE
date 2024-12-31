@@ -1,7 +1,7 @@
 
 # Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
 
-*Please note that this repo is my own research, data collection, and EDA that I am currently doing towards a group machine learning project that is still underway. I will post a link to the project when it is done,  [here](https://github.com/OmdenaAI/DehradunIndiaChapter_ForestFirePredictionandEarlyWarningSystem).*
+*Please note that this repo is my own research, data collection, and EDA that I am currently doing towards a group machine learning project that is still underway. You can click to view the main project, [here](https://github.com/OmdenaAI/DehradunIndiaChapter_ForestFirePredictionandEarlyWarningSystem).*
 
 *The tif files for the mean LST day and night are too large to include directly in my repository. However, if you'd like to access them, you can view or download the files from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)* 
 
