@@ -1,7 +1,7 @@
 # Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
-This repository contains a Python notebook that uses Google Earth Engine (via its Python API) to preprocess Land Surface Temperature (LST) data for a machine learning project focused on wildfire prediction. Land Surface Temperature (LST) measures the temperature of the Earth's surface, which includes soil, vegetation, and built-up areas. It is derived from satellite thermal infrared data and reflects the heat emitted from the ground. This thermal information helps assess how different surfaces interact with heat - a critical factor in determining wildfire risk.
-[Link to Project: Dehradun Forest Fire Prediction and Early Warning System](https://github.com/OmdenaAI/DehradunIndiaChapter_ForestFirePredictionandEarlyWarningSystem)
+This repository contains a Python notebook that uses Google Earth Engine (via its Python API) to preprocess Land Surface Temperature (LST) data for a machine learning project focused on wildfire prediction. Land Surface Temperature (LST) measures the temperature of the Earth's surface, which includes soil, vegetation, and built-up areas. It is derived from satellite thermal infrared data and reflects the heat emitted from the ground. This thermal information helps assess how different surfaces interact with heat - a critical factor in determining wildfire risk. <br> <br>
+*This repo includes my own data collection and EDA for a group machine learning project. You can view the main project, [here](https://github.com/OmdenaAI/DehradunIndiaChapter_ForestFirePredictionandEarlyWarningSystem).*
 ___
 To better predict how fires might behave in the future, we analyzed data from **January 2012 to June 30, 2024**, focusing on Uttarakhand (though you can modify the geographic region to suit your specific research).
 
