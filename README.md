@@ -179,9 +179,10 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
   - Below is an example of the Colab output during the process:
 
  <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/processingdaily-LST.png" alt="Processing Daily LST Data" width="500"/>
-___
+
 ## Data Visualization
-For a detailed analysis of the LST patterns and their implications for wildfire prediction, check out our [visualization documentation](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md). This includes:
+For a detailed analysis of the LST patterns and their implications for wildfire prediction, check out our <br>
+[visualization documentation](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md). This includes:
 * Mean Daytime and Nighttime LST maps for 2024
 * Analysis of temperature patterns and their relationship to wildfire risk
 * Detailed explanation of map features and interpretation
