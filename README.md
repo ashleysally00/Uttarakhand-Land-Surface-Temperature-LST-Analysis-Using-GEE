@@ -7,7 +7,7 @@ This repository contains my individual contribution to Omdena’s *AI-Powered Fo
 
 Land Surface Temperature (LST) measures the temperature of the Earth's surface, including soil, vegetation, and built-up areas. ...
 Land Surface Temperature (LST) measures the temperature of the Earth's surface, which includes soil, vegetation, and built-up areas. It is derived from satellite thermal infrared data and reflects the heat emitted from the ground. This thermal information helps assess how different surfaces interact with heat - a critical factor in determining wildfire risk. <br> <br>
-*This repo includes my own data collection and EDA for a group machine learning project. You can view the main project, [here](https://github.com/OmdenaAI/DehradunIndiaChapter_ForestFirePredictionandEarlyWarningSystem).*
+
 ___
 To better predict how fires might behave in the future, we analyzed data from **January 2012 to June 30, 2024**, focusing on Uttarakhand (though you can modify the geographic region to suit your specific research).
 
