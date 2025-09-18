@@ -19,16 +19,18 @@ Before starting work on this project, ensure you have:
 - [ ] Tested your GEE authentication in Colab
 
 ## Table of Contents
-1. [Objective](#objective)
-2. [Requirements](#requirements)
-3. [Setup Instructions](#setup-instructions)
-4. [Data Workflow](#data-workflow)
-5. [How to Use](#how-to-use)
-6. [Output](#output)
-7. [Handling Task Queue Errors](#handling-task-queue-errors)
-8. [Further Exploration](#further-exploration)
-9. [Data Visualization](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md)
-10. [Glossary & Terms](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md) - *definitions of key terms like LST and other technical concepts used in this project*
+1. [Objective](#objective)  
+2. [My Contributions](#my-contributions)  
+3. [Requirements](#requirements)  
+4. [Setup Instructions](#setup-instructions)  
+5. [Data Workflow](#data-workflow)  
+6. [How to Use](#how-to-use)  
+7. [Output](#output)  
+8. [Handling Task Queue Errors](#handling-task-queue-errors)  
+9. [Further Exploration](#further-exploration)  
+10. [Data Visualization](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/data-visualization-maps-LST.md)  
+11. [Glossary & Terms](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/understanding-the-data.md) – *definitions of key terms like LST and other technical concepts used in this project*
+
 
 ## Objective
 
