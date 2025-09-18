@@ -1,9 +1,6 @@
 
 # Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
 
-
-If you'd like to access the tif files for the mean LST day and night, you can view or download them from my DagsHub repository: [Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE](https://dagshub.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE)
-
 ----
 I interviewed a wildfire public information officer and volunteer firefighter in Redding, California, 11/24/2024, in order to gain insight into what types of data would be most useful for developing a machine learning-based wildfire prediction tool with a focus on wildfire spread. My goal was to understand the perspective of someone who had been present during many wildfires as they unfolded.
 
@@ -28,31 +25,7 @@ Prediction is useful because it tells you where to build the fireline. Firelines
 Just as important to containment is inside the zone, where it is contained enough, it might not still be burning, it might be burning a little, but it is not burning a lot. 
 If we put the firelines in 100 miles ahead of the fire, it does not help. The wind will push the fire over the fireline.
 
-If we had a better idea of how it was behaving, we could put our firelines in at the right place. You could also evacuate communities better because you would know where the fire was going to head. You could predict CO2 release with climate change. You could predict if there was a wetland, and you knew it was going to hit the edge of the wetland in the next few hours, but if you burn up to the edge of the wetland beforehand so there is no fuel when the wind comes in, it won’t jump the wetland.
-
-There are existing fire models, but they are not good. 
-Things to consider are weather, humidity, windspeed, wind direction, solar radiation, temperature, topography, slope, elevation, aspect (which direction does the slope face).
-Narrow canyons can accumulate fire and create a wick where the heat from burning fires can create the drying of the fuels ahead of it. Those are the things that we look out for. 
-
-One of the things that I noticed the most that I thought was most important when I worked as a Fire Information Officer was that, even on your massive wildfires, it is a cyclic process. Even when the fuel is dry, and the topography is steep, fires move uphill because they can preheat the fuel in front of them. Fires move faster when traveling uphill than when downhill. But the wind driven fires on plains can be fast too even on flat terrain. With mountains at least you know that the fire will go to the top and then slow down when it gets to the other side.
-
-The August Fire, I worked on that:
-you will have an event like a lightning strike. Then it will go out. But if you get both dry and wind the fires will start to grow. Let’s say a fire grows to 30,000 acres. Then the wind goes away. Sometimes the smoke from the fire will take. It is a diurnal cycle and a weather cycle. For diurnal, the fire will burn the most between 1-3 pm, for example. 
-
-Picture the ground as you go up and up and up, the temperature gets cooler as you go up. Often, you reach a point as you go up when the temperature starts to get warmer. This is an inversion layer. It prevents air from the ground from going as high as it might. It caps the top. The smoke reaches a certain level in the atmosphere and then stops.
-
-The ground level is very smoky so then the fire cannot grow as fast. Overnight, the fire behavior goes down, which means that it further reduces the fire spread. It is cooling off. But then the smoke starts to set in. For fire behavior, the rate of spread of a fire is going to reduce overnight. And then, in the morning, even when there is sun, the smoke in the morning is holding the heat in and the air in inside a pocket. These mountainous areas have valleys. In the valleys, the air is almost isolated because of the inversion layer. The air does not get transferred as easily out of the valley and the air collects. 
-
-You don’t have the winds in the valley, and you don’t have the replenishment of the oxygen, and now you are in the second day of the fire. Around 1 or 2 o’clock in the afternoon there is so much heat from the solar radiation that it pushes up the inversion layer. The inversion layer breaks, there is no cap, any heat can go straight up into the sky. Heat can move in at the ground level. This causes more movement, and the fire grows again. You’ve let the oxygen in, and the fire grows fast. 
-
-Most of the growth is happening in the mid afternoon. It is not happening all the time. Once the heat from the ground starts to cool down. When the inversion layer reforms, it causes the fire behavior to increase. So, it’s a daily pulsing growth, spreading mid afternoon. That is the daily cycle. And then, at the same time, there is another cycle going on with the fire. It’s the weather cycle. There are larger scale weather events that are not dependent on the fire. 
-
-The first cycle was the general temperature of the day that affects the fire. At 6 am in the morning, firefighters can be near to the fire because the temperature went down over night. The inversion layer moved in. The smoke is still insanely bad. By mid afternoon that same day the fire may have blazed up again. They might do a backburn at night to destroy the fuel between the fireline and the fire.
-
-## Fireline
-
-A fireline is digging by hand or with a dozer to put bare ground in a line around a fire. This is done to get the fire to burn itself out. You need to create an area without fuel where that fire will go out. Fuel is live and dead vegetation when you are talking about a wildfire. 
-
+If we had a better idea of how it was behaving, we could put our firelines in at the right place. You could also evacuate communities better because you would know where the fire 
 Understand that what you are trying to do to put out a fire is to remove all the vegetation on the surface of the ground. It will not work if the fire is burning at the tops of the trees. Ideally you want the fire to burn up to the fireline, where it is burning hot enough to consume the material but not so hot as to be able to jump the fire line. But it is hard to do that because it is usually a brute force thing where you hope that the fire hits the fireline at the right time. 
 
 You know the cycles. There is also backburning, where you’ve got a fire line, the fire is burning but it is not burning so crazy, you put the fire line on a ridge, which is the best place to do it. You clear eight feet wide with a bulldozer. You need to be far enough ahead so that you do not get burned up. If the fire gets enough momentum going up the hill, it may jump the fire line at the top. So, we go in at night and do a backburn. 
