@@ -401,6 +401,22 @@ If you'd like to delve deeper into the significance of this data and its role in
    - This resource includes a detailed glossary to clarify key terms and concepts relevant to the analysis.
 
 2. **[Interview with a Wildfire PIO](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/Interview-with-wildfire-PIO.md)**:
-   - Gain insights from a public information officer and volunteer firefighter about the importance of LST data in wildfire management.
+   - Gain insights from a public infor## My Contributions
 
+## My Contributions
+This repository reflects my individual contribution to Omdena’s *AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand*. Specifically, I contributed by:
 
+- **Data Collection & Preprocessing**  
+  Processed MODIS LST data with Google Earth Engine (Python API), clipped to Uttarakhand boundaries, resampled to 500m, and exported for downstream ML modeling.
+
+- **Exploratory Data Analysis (EDA)**  
+  Generated visualizations of daytime and nighttime mean LST maps for 2024 (see [`data-visualization-maps-LST.md`](data-visualization-maps-LST.md)).
+
+- **Onboarding Documentation**  
+  Authored contributor guides, including setup instructions for GEE, Colab authentication, shapefile management, and error handling. These are documented in files such as `/understanding-the-data.md`, as well as embedded in the README.
+
+- **Domain Research via PIO Interview**  
+  Interviewed a California wildfire Public Information Officer / volunteer firefighter to gather practitioner perspectives on wildfire management and the potential usefulness of Land Surface Temperature data. The full interview is available in [`Interview-with-wildfire-PIO.md`](Interview-with-wildfire-PIO.md).
+
+- **Collaboration & Knowledge Sharing**  
+  Structured outputs (mean/day/night TIFFs, task error handling, visualization guides) to support teammates and ensure reproducibility across different platforms (Google Drive, GitHub, and DagsHub).
