@@ -1,8 +1,30 @@
+# Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California
+**Date**: November 24, 2024  
+**Context**: I conducted this interview on November 24, 2024, with a Redding, California, Public Information Officer (PIO) and volunteer firefighter to inform feature selection for Omdena’s AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand. It provided critical insights into wildfire behavior, containment strategies, and data needs, shaping the design of a machine learning-based prediction tool. [See my project repository](https://github.com/yourusername/Uttarakhand-LST-Analysis).
 
-# Interview with a Wildfire Public Information Officer and Volunteer Firefighter, Redding, California (11/24/2024)
+## Overview
+This interview aimed to identify data critical for predicting wildfire spread, drawing on the practical experience of a PIO and volunteer firefighter involved in multiple California wildfires. The findings guided feature engineering for the Omdena project’s AI tool.
 
-----
-I interviewed a wildfire public information officer and volunteer firefighter in Redding, California, 11/24/2024, in order to gain insight into what types of data would be most useful for developing a machine learning-based wildfire prediction tool with a focus on wildfire spread. My goal was to understand the perspective of someone who had been present during many wildfires as they unfolded.
+## Interview Content
+### Wildfire Experiences
+**Question**: What fires were you involved in?  
+**Answer**: I worked on: August Complex Fire (2020), Hirz Fire (2018), McFarland and Monument Fires (2021), South Fire (2019).  
+- The Carr Fire (2018) was notable, as I evacuated my house. It burned downhill unusually, created a fire tornado, and reached Redding, stopped by the Sacramento River and I-5. Firefighters had to secure all flanks to prevent re-ignition a month later.
+
+### Containment Strategies
+- **Firelines and Backburning**: Firelines are ineffective in high winds (e.g., 40 mph). Backburning creates a burned zone to stop fire spread by consuming fuel.  
+- **Goal**: Contain, not extinguish, fires by managing fuel and terrain.
+
+### Data Needs for Machine Learning
+- **Key Data**: Satellite-based infrared data for fire spread rate, topography (slope, aspect), fuel type, and weather (wind, inversion layers).  
+- **Application**: Machine learning can correlate these factors to predict fire spread and optimize fireline placement, ensuring firelines are built close enough to the fire but safely timed.
+
+### Implications for AI Tool
+The interview highlighted the need for features like fire spread rate, fuel conditions, and terrain analysis, ensuring the tool’s practical utility for firefighters.
+
+[Note: One sentence about fireline distance (“You can't put the fireline about 20 feet in front of the fire”) is pending fact-checking with the interviewee.]
+
+------------------------------------------------------------------
 
 **What fires were you involved in?** I worked on: August Complex Fire (2020), Hirz Fire (2018), McFarland and Monument Fires(2021), South Fire(2019).
 
