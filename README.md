@@ -1,5 +1,7 @@
 # Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247725.svg)](https://doi.org/10.5281/zenodo.17247725)
+
  ## Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
 This repository contains my individual contribution to Omdena’s *AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand*. I carried out preprocessing and exploratory data analysis of Land Surface Temperature (LST) data using Google Earth Engine (via its Python API), and I wrote the onboarding documentation to help collaborators set up and reproduce the workflow. I also conducted domain research, including an [interview with a California wildfire Public Information Officer](Interview-with-wildfire-PIO.md), to ensure the features and workflow aligned with real-world fire management needs.
@@ -426,3 +428,9 @@ This repository reflects my individual contribution to Omdena’s *AI-Powered Fo
 
 - **Collaboration & Knowledge Sharing**  
   Structured outputs (mean/day/night TIFFs, task error handling, visualization guides) to support teammates and ensure reproducibility across different platforms (Google Drive, GitHub, and DagsHub).
+
+  ### How to Cite
+Ashley Rice. *Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California.* Zenodo (2025). https://doi.org/10.5281/zenodo.17247725  
+
+See [ORCID profile](https://orcid.org/0009-0001-5972-2257) for related works.
+
