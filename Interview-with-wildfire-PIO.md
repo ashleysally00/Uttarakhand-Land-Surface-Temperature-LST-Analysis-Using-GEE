@@ -1,6 +1,6 @@
 # Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California
 **Date**: November 24, 2024  
-**Context**: I conducted this interview on November 24, 2024, with a Redding, California, Public Information Officer (PIO) and volunteer firefighter to inform feature selection for Omdena’s AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand. It provided critical insights into wildfire behavior, containment strategies, and data needs, shaping the design of a machine learning-based prediction tool. [See my project repository](https://github.com/yourusername/Uttarakhand-LST-Analysis).
+**Context**: I conducted this interview on November 24, 2024, with a Redding, California, Public Information Officer (PIO) and volunteer firefighter to inform feature selection for Omdena’s AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand. It provided critical insights into wildfire behavior, containment strategies, and data needs, shaping the design of a machine learning-based prediction tool. [See my project repository](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE).
 
 ## Overview
 This interview aimed to identify data critical for predicting wildfire spread, drawing on the practical experience of a PIO and volunteer firefighter involved in multiple California wildfires. The findings guided feature engineering for the Omdena project’s AI tool.
