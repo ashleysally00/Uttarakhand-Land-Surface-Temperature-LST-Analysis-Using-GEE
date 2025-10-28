@@ -1,6 +1,6 @@
 # Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247725.svg)](https://doi.org/10.5281/zenodo.17247725)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247725.svg)](https://zenodo.org/records/17247725)
 
  ## Uttarakhand Land Surface Temperature (LST) Analysis for Fire Prediction ML
 
