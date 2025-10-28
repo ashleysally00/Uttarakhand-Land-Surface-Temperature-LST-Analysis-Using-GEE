@@ -149,8 +149,8 @@ ___
 
 ## How to Use
 
-1. **Open the Colab Notebook**:
-   - Download the .ipynb file from the shared repository or run it directly in Colab
+1. **Open the Colab Notebook:**
+   - Download the `.ipynb` file from the repository (`NB_Uttarakhand_LST_no_widgets.ipynb`) or run it directly in Colab
 
 2. **Update the Parameters**:
    - Replace `users/your_username/Region_Boundary` with your shapefile's Asset ID
