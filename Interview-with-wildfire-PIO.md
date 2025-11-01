@@ -1,4 +1,7 @@
 # Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17247724.svg)](https://doi.org/10.5281/zenodo.17247724)
+
 **Date:** November 24, 2024  
 **Context:** I conducted this interview on November 24, 2024, with a Redding, California, Public Information Officer (PIO) and volunteer firefighter to inform feature selection for Omdena’s *AI-Powered Forest Fire Prediction and Early Warning System for Uttarakhand*. It provided critical insights into wildfire behavior, containment strategies, and data needs, shaping the design of a machine learning-based prediction tool. See my project repository.
 
@@ -107,6 +110,8 @@ You want to build the fireline such that at the exact moment that the fireline i
 **Fire Triangle:** heat, oxygen, and fuel  
 **Fire Behavior Triangle:** weather, fuel, and terrain
 
-### How to Cite
-Ashley Rice. *Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California.* Zenodo (2025).  
-<https://doi.org/10.5281/zenodo.17247725>
+
+## Citation
+Ashley Rice. *Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California.*  
+Zenodo (2025). [https://doi.org/10.5281/zenodo.17247724](https://doi.org/10.5281/zenodo.17247724)
+
