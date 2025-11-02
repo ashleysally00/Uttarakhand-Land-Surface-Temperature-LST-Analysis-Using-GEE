@@ -187,7 +187,8 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
   - Exporting daily LST data for an extended time range (**January 2012 to June 30, 2024**) may take a while.
   - Below is an example of the Colab output during the process:
 
- <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/processingdaily-LST.png" alt="Processing Daily LST Data" width="500"/>
+![Processing Daily LST Data](./images/processingdaily-LST.png)
+
 
 ## Data Visualization
 For a detailed analysis of the LST patterns and their implications for wildfire prediction, check out our <br>
@@ -269,7 +270,8 @@ When processing large datasets, it's helpful to monitor the progress of your exp
 
 Below is an example of what the **Inspector Console** looks like while a task is running:
 
-![Inspector Console Screenshot](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/inspectorconsole.png)
+![Inspector Console Screenshot](./images/inspectorconsole.png)
+
 
 ## Steps to Monitor Exports
 
@@ -299,7 +301,8 @@ The following outputs are generated:
 
 When processing and downloading large datasets such as daily LST data over a long time range, you may encounter the following error:
 
-![Too Many Tasks Error](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/too-many-tasks-gee.png)
+![Too Many Tasks Error](./images/too-many-tasks-gee.png)
+
 
 ### What Does This Mean?
 
