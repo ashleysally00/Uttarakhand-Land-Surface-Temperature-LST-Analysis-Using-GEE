@@ -67,19 +67,19 @@ ___
 2. **Choose Your Account Type:**
    For academic research purposes, select "Unpaid Usage":
 
-   ![Earth Engine Account Type](https://github.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/blob/main/unpaid.png?raw=true)
+![Earth Engine Account Type](./images/unpaid.png)
 
    - Once approved, you'll see the Code Editor interface:
 
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/GEE-code-editor.png" width="740" alt="Google Earth Engine Code Editor Interface"/>
+![Google Earth Engine Code Editor Interface](./images/GEE-code-editor.png)
 
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
    - In the **Assets** tab, click the "NEW" button and select "Shape files"
 
    - You'll see this upload interface:
+![Shapefile upload interface in GEE](./images/uploadfile-shapefile-gee.png)
 
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/uploadfile-shapefile-gee.png" width="300" alt="Shapefile upload interface in GEE"/>
 
 <br>
 <br>
