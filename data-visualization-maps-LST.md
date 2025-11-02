@@ -5,14 +5,15 @@ These Land Surface Temperature (LST) maps visualize temperature patterns across 
 
 ### Daytime LST
 
-![Mean Daytime LST Map for Uttarakhand 2024](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/MeanLSTday2024.png)
+![Mean Daytime LST Map for Uttarakhand 2024](./images/MeanLSTday2024.png)
 
 * Description: This map shows how the Earth's surface heats up during the day in 2024. Urban areas, bare soil, and low-lying regions absorb more heat, leading to higher temperatures (red areas).
 * Use Case: Identifying regions prone to excessive daytime heating, which can influence wildfire risk.
 
 ### Nighttime LST
 
-![Mean Nighttime LST Map for Uttarakhand 2024](https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/meanLSTnight2024.png)
+![Mean Nighttime LST Map for Uttarakhand 2024](./images/meanLSTnight2024.png)
+
 
 * Description: This map shows how the Earth's surface cools down at night. Vegetation and water bodies lose heat faster, resulting in cooler temperatures (blue areas), while urban regions retain heat, forming urban heat islands (red areas).
 * Use Case: Understanding nighttime cooling dynamics, crucial for wildfire spread predictions and ecosystem resilience.
