@@ -89,7 +89,7 @@ ___
 <br>
 <br>
 <br>
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/shapefile-in-GEE%20.png" width="700" alt="Uttarakhand Boundary Shapefile in GEE"/>
+![Uttarakhand Boundary Shapefile in GEE](./images/shapefile-in-GEE.png)
 
    - Note the **Asset ID** for use in your code
 ___   
@@ -98,7 +98,7 @@ ___
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
    - Create a new project or select an existing one:
 
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/google-cloud-console-project.png" width="720" alt="Google Cloud Console Project Interface"/>
+  ![Google Cloud Console Project Interface](./images/google-cloud-console-project.png)
 
 <br>
 
@@ -106,7 +106,7 @@ ___
    - In the **APIs & Services > Library** section, search for **Earth Engine API**
    - You should see the following screen:
 
-   <img src="https://raw.githubusercontent.com/ashleysally00/Uttarakhand-Land-Surface-Temperature-LST-Analysis-Using-GEE/main/GEEAPI.png" width="300" alt="Google Earth Engine API Screen"/>
+![Google Earth Engine API Screen](./images/GEEAPI.png)
    
    - Click "MANAGE" or "ENABLE" (if not already enabled)
    - When successfully enabled, you'll see a green checkmark with "API Enabled" as shown in the image above
