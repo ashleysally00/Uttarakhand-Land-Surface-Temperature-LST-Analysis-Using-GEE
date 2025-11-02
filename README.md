@@ -434,4 +434,3 @@ This repository reflects my individual contribution to Omdena’s *AI-Powered Fo
 Ashley Rice. *Interview with a Wildfire PIO and Volunteer Firefighter, Redding, California.* Zenodo (2025). https://doi.org/10.5281/zenodo.17247725  
 
 See [ORCID profile](https://orcid.org/0009-0001-5972-2257) for related works.
-
