@@ -67,7 +67,10 @@ ___
 2. **Choose Your Account Type:**
    For academic research purposes, select "Unpaid Usage":
 
-![Earth Engine Account Type](./images/unpaid.png)
+<p align="center">
+  <img src="./images/unpaid.png" width="800">
+</p>
+
 
    - Once approved, you'll see the Code Editor interface:
 
