@@ -85,21 +85,20 @@ ___
    - You'll see this upload interface:
 
 <p align="center">
-  <img src="./images/uploadfile-shapefile-gee.png" width="360">
+  <img src="./images/uploadfile-shapefile-gee.png" width="450">
 </p>
 
+<br><br>
+
+<p align="center">
+  <img src="./images/shapefile-in-GEE.png" width="650">
+</p>
 
 <br>
-<br>
-<br>
-   - After successfully uploading, you'll see your shapefile in the Assets tab:
-<br>
-<br>
-<br>
-<br>
-![Uttarakhand Boundary Shapefile in GEE](./images/shapefile-in-GEE.png)
 
-   - Note the **Asset ID** for use in your code
+- Note the **Asset ID** for use in your code  
+
+
 ___   
 ### Google Cloud Console
 1. **Create a Project**:
