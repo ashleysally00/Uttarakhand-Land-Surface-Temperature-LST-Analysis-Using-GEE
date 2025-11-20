@@ -68,20 +68,25 @@ ___
    For academic research purposes, select "Unpaid Usage":
 
 <p align="center">
-  <img src="./images/unpaid.png" width="800">
+  <img src="./images/GEE_Start.jpg" width="750">
 </p>
 
+<br>
 
-   - Once approved, you'll see the Code Editor interface:
+- Once approved, you'll see the Code Editor interface:
 
-![Google Earth Engine Code Editor Interface](./images/GEE-code-editor.png)
+<p align="center">
+  <img src="./images/GEE-code-editor.png" width="750">
+</p>
 
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
    - In the **Assets** tab, click the "NEW" button and select "Shape files"
-
    - You'll see this upload interface:
-![Shapefile upload interface in GEE](./images/uploadfile-shapefile-gee.png)
+
+<p align="center">
+  <img src="./images/uploadfile-shapefile-gee.png" width="360">
+</p>
 
 
 <br>
