@@ -306,7 +306,10 @@ The following outputs are generated:
 
 When processing and downloading large datasets such as daily LST data over a long time range, you may encounter the following error:
 
-![Too Many Tasks Error](./images/too-many-tasks-gee.png)
+<p align="center">
+  <img src="./images/too-many-tasks-gee.png" width="450">
+</p>
+
 
 
 ### What Does This Mean?
