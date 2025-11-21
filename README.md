@@ -186,11 +186,13 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
     - `LST_Day_YYYY-MM-DD.tif` (e.g., `LST_Day_2012-01-01.tif` for daytime LST on January 1, 2012)
     - `LST_Night_YYYY-MM-DD.tif` (e.g., `LST_Night_2012-01-01.tif` for nighttime LST on January 1, 2012).
 
-- **Processing Time**:
+**Processing Time**:
   - Exporting daily LST data for an extended time range (**January 2012 to June 30, 2024**) may take a while.
   - Below is an example of the Colab output during the process:
 
-![Processing Daily LST Data](./images/processingdaily-LST.png)
+<p align="center">
+  <img src="./images/processingdaily-LST.png" width="280">
+</p>
 
 
 ## Data Visualization
