@@ -191,7 +191,7 @@ To extract daily LST data for the specified time range (**January 2012 to June 3
   - Below is an example of the Colab output during the process:
 
 <p align="center">
-  <img src="./images/processingdaily-LST.png" width="280">
+  <img src="./images/processingdaily-LST.png" width="320">
 </p>
 
 
