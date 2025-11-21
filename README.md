@@ -76,7 +76,7 @@ ___
 - Once approved, you'll see the Code Editor interface:
 
 <p align="center">
-  <img src="./images/GEE-code-editor.png" width="750">
+  <img src="./images/GEE-code-editor.png" width="650">
 </p>
 
 2. **Upload a Shapefile**:
@@ -85,16 +85,9 @@ ___
    - You'll see this upload interface:
 
 <p align="center">
-  <img src="./images/uploadfile-shapefile-gee.png" width="450">
+  <img src="./images/uploadfile-shapefile-gee.png" width="350">
 </p>
 
-<br><br>
-
-<p align="center">
-  <img src="./images/shapefile-in-GEE.png" width="650">
-</p>
-
-<br>
 
 - Note the **Asset ID** for use in your code  
 
@@ -105,21 +98,24 @@ ___
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
    - Create a new project or select an existing one:
 
-  ![Google Cloud Console Project Interface](./images/google-cloud-console-project.png)
-
-<br>
+<p align="center">
+  <img src="./images/google-cloud-console-project.png" width="550">
+</p>
 
 2. **Enable Earth Engine API**:
    - In the **APIs & Services > Library** section, search for **Earth Engine API**
    - You should see the following screen:
 
-![Google Earth Engine API Screen](./images/GEEAPI.png)
-   
+<p align="center">
+  <img src="./images/GEEAPI.png" width="350">
+</p>
+
    - Click "MANAGE" or "ENABLE" (if not already enabled)
-   - When successfully enabled, you'll see a green checkmark with "API Enabled" as shown in the image above
+   - When successfully enabled, you'll see a green checkmark with "API Enabled"
 
 3. **Optional: Enable Google Drive API**:
    - If exporting results to Google Drive, enable the **Google Drive API**
+
 ___
 ### Google Colab Setup
 1. Open a new notebook in Colab
