@@ -73,11 +73,12 @@ ___
 
 <br>
 
-- Once approved, you'll see the Code Editor interface:
+## Once approved, you'll see the Code Editor interface:
 
 <p align="center">
-  <img src="./images/GEE-code-editor.png" width="550">
+  <img src="./images/gee_editor_cropped.png" width="750">
 </p>
+
 
 2. **Upload a Shapefile**:
    - Go to the **Earth Engine Code Editor**
