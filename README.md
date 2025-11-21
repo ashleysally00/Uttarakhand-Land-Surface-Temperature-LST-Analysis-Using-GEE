@@ -68,7 +68,7 @@ ___
    For academic research purposes, select "Unpaid Usage":
 
 <p align="center">
-  <img src="./images/GEE_Start.jpg" width="750">
+  <img src="./images/GEE_Start.jpg" width="550">
 </p>
 
 <br>
@@ -76,7 +76,7 @@ ___
 - Once approved, you'll see the Code Editor interface:
 
 <p align="center">
-  <img src="./images/GEE-code-editor.png" width="650">
+  <img src="./images/GEE-code-editor.png" width="550">
 </p>
 
 2. **Upload a Shapefile**:
@@ -275,8 +275,9 @@ When processing large datasets, it's helpful to monitor the progress of your exp
 
 Below is an example of what the **Inspector Console** looks like while a task is running:
 
-![Inspector Console Screenshot](./images/inspectorconsole.png)
-
+<p align="center">
+  <img src="./images/inspectorconsole.png" width="450">
+</p>
 
 ## Steps to Monitor Exports
 
